@@ -29,7 +29,7 @@ pipeline {
      * Global environment variables
      */
     environment {
-        GIT_REPO_URL = 'https://github.com/shadow0wolf/microservices0-product-service.git'
+        GIT_REPO_URL = 'https://github.com/shadow0wolf/-microservices0-product-service.git'
         GIT_BRANCH   = 'main'
 
         IMAGE_NAME   = 'product-service'
