@@ -80,7 +80,7 @@
                 <!-- Explicit configuration (good practice) -->
                 <configuration>
                     <!-- Your main class -->
-                    <mainClass>com.example.userservice.Application</mainClass>
+                    <mainClass>com.example.productservice.ProductServiceApplication</mainClass>
                 </configuration>
 
                 <executions>
