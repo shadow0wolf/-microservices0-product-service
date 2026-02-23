@@ -69,4 +69,31 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <plugins>
+
+            <!-- Spring Boot Plugin (creates executable fat jar) -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+
+                <!-- Explicit configuration (good practice) -->
+                <configuration>
+                    <!-- Your main class -->
+                    <mainClass>com.example.userservice.Application</mainClass>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <!-- Repackage makes fat jar -->
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
 </project>
